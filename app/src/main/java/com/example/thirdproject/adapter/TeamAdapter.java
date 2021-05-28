@@ -16,7 +16,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ListViewHolder> {
+public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ListViewHolder>{
 
     private ArrayList<TeamModel> dataList;
     private OnItemClickListener mListener;
@@ -70,17 +70,7 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ListViewHolder
             img_list = itemView.findViewById(R.id.img_list);
             relativeLayout = itemView.findViewById(R.id.rv_layout_list);
 
-            relativeLayout.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (listener != null) {
-                        int position = getAdapterPosition();
-                        if (position != RecyclerView.NO_POSITION) {
-                            listener.onItemClick(position);
-                        }
-                    }
-                }
-            });
+
         }
     }
 }

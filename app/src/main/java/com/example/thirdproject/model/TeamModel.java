@@ -1,35 +1,35 @@
 package com.example.thirdproject.model;
 
 public class TeamModel {
-    private String TeamImage, TeamName, TeamDesc;
+    private String teamImage, teamName, teamDesc;
 
     public TeamModel(String teamImage, String teamName, String teamDesc) {
-        this.TeamImage = teamImage;
-        this.TeamName = teamName;
-        this.TeamDesc = teamDesc;
+        this.teamImage = teamImage;
+        this.teamName = teamName;
+        this.teamDesc = teamDesc;
     }
 
     public String getTeamImage() {
-        return TeamImage;
+        return teamImage;
     }
 
     public void setTeamImage(String teamImage) {
-        TeamImage = teamImage;
+        this.teamImage = teamImage;
     }
 
     public String getTeamName() {
-        return TeamName;
+        return teamName;
     }
 
     public void setTeamName(String teamName) {
-        TeamName = teamName;
+        this.teamName = teamName;
     }
 
     public String getTeamDesc() {
-        return TeamDesc;
+        return teamDesc;
     }
 
     public void setTeamDesc(String teamDesc) {
-        TeamDesc = teamDesc;
+        this.teamDesc = teamDesc;
     }
 }
